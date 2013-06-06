@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+  <div> 
+  <ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">Home</a></li>
+  <li><a href="#profile">Profile</a></li>
+  <li><a href="#messages">Messages</a></li>
+  <li><a href="#settings">Settings</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="home">stuff and stuff</div>
+  <div class="tab-pane" id="profile">profile and stuff</div>
+  <div class="tab-pane" id="messages">shit and stuff</div>
+  <div class="tab-pane" id="settings">whatever and stuff</div>
+</div>
+ 
+<!--<script>
+  $(function () {
+    $('#myTab a:last').tab('show');
+  })
+</script> -->
+   
+   
+   
+   
+</div> <!-- end container -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script> $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+  </script>
+  </body>
+</html>
