@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tatooin Mechanic Shop Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="css/mechanicShop.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../../../Bootstrap test/assets/ico/favicon.png">
+  </head>
+
+  <body>
+	 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Tatooine Mechanic App</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">R2D2</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="partTracking.html">Parts Tracking</a></li>
+              <li><a href="#contact">Log Out</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row-fluid" id="mechanicheader">
+    
+ 		 <div class="span12" >
+         		<div class="span2">
+                <img src="img/legoMechanicShop.jpg" class="img-rounded" id="imglogo">
+                </div>
+          		<div class="span10">  
+                	<H1>Tatooine Mecanic Shop Customer Assitance App</H1> 
+                </div>     
+         </div>
+  		
+	</div>
+    </div>
+    
+  <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+    	<h3>Mechanics</h3>
+        <div class="row-fluid" id="mechanicBox" >
+       	 <div class="span5" >
+    		<h5>R2D2</h5>
+    		<img src="img/mechanic1.gif">
+    		</div>
+        	<div class="span7">
+        		<ul class="mechanicInfo">
+            		<li>Availability</li>
+                	<li>Specialty</li>
+                    <li>Work Schedule</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="row-fluid" id="mechanicBox">
+       	 <div class="span5" >
+    		<h5>R2D2</h5>
+    		<img src="img/mechanic1.gif">
+    		</div>
+        	<div class="span7">
+        		<ul class="mechanicInfo">
+            		<li>Availability</li>
+                	<li>Specialty</li>
+                    <li>Work Schedule</li>
+        		</ul>
+        	</div>
+        </div>
+        
+        <div class="row-fluid"  id="mechanicBox">
+       	 <div class="span5">
+    		<h5>R2D2</h5>
+    		<img src="img/mechanic1.gif">
+    		</div>
+        	<div class="span7">
+        		<ul class="mechanicInfo">
+            		<li>Availability</li>
+                	<li>Specialty</li>
+                    <li>Work Schedule</li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="row-fluid"id="mechanicBox">
+       	 <div class="span5" >
+    		<h5>R2D2</h5>
+    		<img src="img/mechanic1.gif">
+    		</div>
+        	<div class="span7">
+        		<ul class="mechanicInfo">
+            		<li>Availability</li>
+                	<li>Specialty</li>
+                    <li>Work Schedule</li>
+        		</ul>
+        	</div>
+        </div>
+        
+      <!--Sidebar content-->
+    </div>
+    
+       
+    <div class="span9" id="mechanicstats">
+      <!--Body content-->
+      
+  		<ul class="nav nav-tabs" id="myTab">
+  			<li><a href="#profile">Vehicle #1</a></li>
+ 			 <li><a href="#profile">Vehicle #2</a></li>
+ 			 <li><a href="#profile">Vehicle #3</a></li>
+ 			
+		</ul>
+ 
+		<div class="tab-content">
+  		 			 <div class="tab-pane active" id="profile"><img src="img/Racer.png">
+                     	
+                        <div class="row-fluid">
+                     		<div class="controls controls-row" id="vehicleInfo">
+ 							 <h4>Vehicle Information</h4>
+                             <input class="span3" type="text" placeholder="Model">
+  							<input class="span3" type="text" placeholder="VIN #">
+                            <input class="span3" type="text" placeholder="Year">
+							</div>                    		                          
+                            
+                            
+                        </div>
+                   
+ 					</div>	
+         <div class="tab-pane" id="messages">
+             
+             		<div class="row-fluid" >
+                     		
+                           <div class="controls controls-row" id="vehicleInfo">
+ 							<h4>Customer Contact Information</h4>
+                             <input class="span5" type="text" placeholder="Phone #">
+  							<input class="span5" type="text" placeholder="Email">
+							</div>
+                       
+             		</div>
+ 			
+					<div class="row-fluid">
+                     		<div class="controls controls-row" id="vehicleInfo">
+ 							<h4>Customer Address</h4>
+                             <input class="span4" type="text" placeholder="Address #">
+  							<input class="span6" type="text" placeholder="Street">
+                            							</div>
+                       
+             		</div>
+        
+          			<div class="row-fluid">
+                    
+                   		 <div class="controls controls-row" id="vehicleInfo">
+ 							 <input class="span5" type="text" placeholder="City">
+  							<input class="span1" type="text" placeholder="State">
+                            <input class="span4" type="text" placeholder="Zip Code">
+							</div>
+                     </div>
+                       <div class="row-fluid">
+                    
+                   		 <div class="controls controls-row" id="vehicleInfo">
+ 							<h4>Customer Payment Information</h4>
+                             <input class="span5" type="text" placeholder="Credit Card #">
+  							<input class="span3" type="text" placeholder="Exp.">
+                            <input class="span2" type="text" placeholder="Verificaion #">
+							</div>
+                     </div>
+                       
+                       
+      
+         </div>
+      
+      
+    </div> <!-- end of span 9-->
+     </div>
+ 
+ 	<div class="row-fluid">
+ 		<div class="span12">
+       	<span class="clearfix"></span>
+        </div>
+ 
+ 	</div>
+  		<div class="row-fluid">
+        <div class="span9 offset3">
+                        <h3>Order List</h3>
+                        </div>
+        </div>
+        <div class="row-fluid">
+    		
+      			<div class="span9 offset3">
+                	
+                    <div class="row-fluid" id="partInfo">
+                    	
+                        <div class="span3">
+                        <img src="img/engine1.png">
+                        
+                        </div>
+                        <div class="span5"
+                        <h4>Part Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. </p>
+                        </div>
+                         <div class="span4">
+                        <h4>Availability</h4>
+                        <div class="input-prepend input-append">
+ 						 	<span class="add-on">$</span>
+  							<input class="span4" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+							</div>
+                        </div>
+                        
+                         
+                      </div>
+                        
+                        
+                	</div>
+                
+                </div>
+      		
+                  <div class="row-fluid">
+    		
+      			<div class="span9 offset3">
+                	<div class="row-fluid" id="partInfo">
+                    	<div class="span3">
+                        <img src="img/engine1.png">
+                        
+                        </div>
+                        <div class="span5"
+                        <h4>Part Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. </p>
+                        </div>
+                         <div class="span4">
+                        <h4>Part Cost</h4>
+                        <div class="input-prepend input-append">
+ 						 	<span class="add-on">$</span>
+  							<input class="span4" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+							</div>
+                        </div>
+                        
+                         
+                      </div>
+                        
+                        
+                	</div>
+                
+                </div>
+                  
+                  
+                  
+                  
+                  
+        <div class="row-fluid">
+        	<div class="span9 offset3">
+            <h3>Upgrade Parts</h3>
+            </div>
+        </div>        
+                  
+              <div class="row-fluid">
+    		
+      			<div class="span9 offset3">
+                	<div class="row-fluid" id="partInfo">
+                    	<div class="span3">
+                        <img src="img/engine2.png">
+                        
+                        </div>
+                        <div class="span5"
+                        <h4>Part Description</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. </p>
+                        </div>
+                         <div class="span4">
+                        <h4>Part Cost</h4>
+                        <div class="input-prepend input-append">
+ 						 	<span class="add-on">$</span>
+  							<input class="span4" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+							</div>
+                        </div>
+                        
+                         
+                      </div>
+                        
+                        
+                	</div>
+                
+                </div>    
+                     
+            
+        <div class="row-fluid">
+        	<div class="span9 offset3">
+            <h3>Repair Time</h3>
+            </div>
+        </div>        
+                  
+              <div class="row-fluid">
+    		
+      			<div class="span9 offset3">
+                	<div class="row-fluid" id="partInfo">
+                    	<div class="span6" id="repair">
+                        <h4> Estimated time of repair</h4><br>
+                        <input type="text" placeholder="12:00 hrs">
+                        
+                        </div>
+                        
+                        </div>
+                        
+                         
+                      </div>
+                        
+                        
+                	</div>
+                
+                
+                     
+            
+          <div class="row-fluid">
+        	<div class="span9 offset3">
+            <h3>Total Bill</h3>
+           	</div>
+        </div>        
+                  
+              <div class="row-fluid">
+    		
+      			<div class="span9 offset3">
+                	<div class="row-fluid" id="partInfo">
+                    	<div class="span3" id="totalBill">
+                        	<h4>Part Cost</h4>
+                        		<div class="input-prepend input-append">
+ 						 		<span class="add-on">$</span>
+  								<input class="span2" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+								</div>
+                        
+                        
+                        </div>
+                        
+                        <div class="span3" id="totalBill">
+                        	<h4>Labor Cost</h4>
+                        		<div class="input-prepend input-append">
+ 						 		<span class="add-on">$</span>
+  								<input class="span2" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+								</div>
+                        
+                        
+                        </div>
+                        
+                        <div class="span3" id="totalBill">
+                        	<h4>Sales Tax</h4>
+                        		<div class="input-prepend input-append">
+ 						 		<span class="add-on">$</span>
+  								<input class="span2" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+								</div>
+                        
+                        
+                        </div>
+                        
+                        <div class="span3" id="totalBill">
+                        	<h4>Total Cost</h4>
+                        		<div class="input-prepend input-append">
+ 						 		<span class="add-on">$</span>
+  								<input class="span2" id="appendedPrependedInput" type="text">
+  								<span class="add-on">.00</span>
+								</div>
+                        
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+            		</div>
+                    
+                    
+                    	
+                                          
+                        
+                        
+                        
+                        
+                        
+                        
+            		</div>
+                    
+                    
+                    
+                    
+                    
+                  
+                   
+            	</div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            	
+            </div>
+     	 </div>
+      
+      
+  
+  </div><!-- end of row fluid-->
+</div>  <!-- end of container fluid--> 
+
+   
+<div class="clearfix"></div>
+      <br><footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script> $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+  </script>
+    
+    
+    
+    <script src="../../../../Bootstrap test/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-transition.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-alert.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-modal.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-tab.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-popover.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-button.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-collapse.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-carousel.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tatooin Mechanic Shop Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="css/mechanicShop.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../../../Bootstrap test/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../../../Bootstrap test/assets/ico/favicon.png">
+  </head>
+
+  <body>
+	 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Tatooine Mechanic App</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">R2D2</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="partTracking.html">Parts Tracking</a></li>
+              <li><a href="#contact">Log Out</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+    <div class="row-fluid" id="mechanicheader">
+    
+ 		 <div class="span12" >
+         		<div class="span2">
+                <img src="img/legoMechanicShop.jpg" class="img-rounded" id="imglogo">
+                </div>
+          		<div class="span10">  
+                	<H1>Tatooine Mecanic Shop Customer Assitance App</H1>
+                    	<h3>Parts Tracking Page</h3> 
+                </div>     
+         </div>
+  		
+	</div>
+    </div>
+    
+  <div class="container-fluid"> 
+     <div class="row-fluid">   
+    <div class="span12" id="trackingParts">
+      <!--Body content-->
+      
+  		<ul class="nav nav-tabs" id="myTab">
+  			<li><a href="#profile">Track Ordered Parts</a></li>
+ 			 <li><a href="#messages">Inventory</a></li>
+             <li><a href="#settings">Part at Junkyard</a></li>
+
+ 			
+		</ul>
+ 		
+		<div class="tab-content">
+  		 			 <div class="tab-pane active" id="profile">
+                     	
+                        <div class="row-fluid">
+                     		<div class="span8" id="orderPartsMap">
+ 							 <h4>Ordered Parts Map</h4>
+                           		<img src="img/galaxy.gif" id="galaxy" class="img-rounded">
+							</div>                    		                          
+                           
+                            <div class="span4"><!--ordered part information-->
+                        	    <div class="row-fluid" id="orderedpartInfoActive">
+                    	           <div class="span6">                  
+                        				<h4>Engine Left</h4>                              							
+            								<pre>Est. Time of Arrival - - 12:00 hrs</pre>
+                							<pre>Location - - Naboo</pre>
+                                                                				
+        							</div>
+                        			<div class="span6">
+                       					<img src="img/engine1.png">
+                                    </div>
+                        
+                       		</div> <!-- end of img div -->
+                        
+                         	
+                       
+                            
+                            </div><!-- end of div for side tracking parts-->
+                            
+                            <div class="span4"><!--ordered part information-->
+                        	    <div class="row-fluid" id="orderedpartInfo">
+                    	           <div class="span6">                  
+                        				<h4>Engine Right</h4>                              							
+            								<pre>Est. Time of Arrival - - 3:30 hrs</pre>
+                							<pre>Location - - Bothawui</pre>
+                    				
+        							</div>
+                        			<div class="span6">
+                       					<img src="img/engine1.png">
+                                    </div>
+                        
+                       		</div> <!-- end of img div -->
+                        
+                         	
+                       
+                            
+                            </div><!-- end of div for side tracking parts-->
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                   
+ 					</div>	
+         
+         
+      <div class="tab-pane" id="messages">
+        <div class="row-fluid">
+          <div class="span12">
+             <table class="table table-hover" id="table">
+ 			<thead>
+    				<tr>
+     				 	<th>Part Name</th>
+      					<th>Part Number</th>
+                        <th>Shelf Location</th>
+    				</tr>
+ 				</thead>
+  				<tbody>
+   					 <tr>
+     					 <td>Engine Left Upgrade</td>
+     					 <td>ENG12567</td>
+                         <td>Rack 18 Shelf 5</td>
+    				</tr>
+  					<tr>
+     					 <td>Scupper</td>
+     					 <td>scup847</td>
+                         <td>Rack 37 Shelf 2</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                	<tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                	<tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>                    
+                </tbody>
+			</table>
+             		
+                       
+         </div><!-- end of class-->            
+      </div><!-- end of row fluid-->
+      </div>
+       
+       
+       <div class="tab-pane" id="settings">
+       
+        <div class="row-fluid">
+          <div class="span12">
+             <table class="table table-hover" id="table">
+ 			<thead>
+    				<tr>
+     				 	<th>Part Name</th>
+      					<th>Part Number</th>
+                        <th>Location</th>
+    				</tr>
+ 				</thead>
+  				<tbody>
+   					 <tr>
+     					 <td>Flux Capacitor</td>
+     					 <td>FLUX1</td>
+                         <td>Jim's Junk Pile</td>
+    				</tr>
+  					<tr>
+     					 <td>Electron Inhibitor</td>
+     					 <td>ELI878787</td>
+                         <td>Pile #7</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                	<tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                	<tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>
+                    <tr>
+     					 <td>Lorem Ipsum</td>
+     					 <td>Lorem Ipsum</td>
+                         <td>Lorem Ipsum</td>
+    				</tr>                    
+                </tbody>
+			</table>
+             		
+                       
+         </div><!-- end of class-->            
+      </div><!-- end of row fluid-->
+       
+      </div> 
+ 
+     
+    </div> <!-- end of span 12-->
+     </div> <!-- end of Fluid Row-->
+     
+     </div><!-- end of Fluid Container-->
+ 
+ 	
+ 
+ 
+ 
+ 	
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            	
+            </div>
+     	 </div>
+      
+      
+  
+  </div><!-- end of row fluid-->
+</div>  <!-- end of container fluid--> 
+
+   
+<div class="clearfix"></div>
+      <br><footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script> $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+  </script>
+    
+    
+    
+    <script src="../../../../Bootstrap test/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-transition.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-alert.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-modal.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-tab.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-popover.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-button.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-collapse.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-carousel.js"></script>
+    <script src="../../../../Bootstrap test/assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
